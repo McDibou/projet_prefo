@@ -113,8 +113,7 @@
 .img_one
     {
         background-image: url(img/img_one.jpg);
-        box-shadow: 20px 20px 0px black;
-        
+        box-shadow: 20px 20px 0px black;  
     }
 .img_one:hover
     {
@@ -144,3 +143,62 @@
         margin-left: 50px;
         margin-top : -150px;
     }
+
+/*page_exposition*/
+.page_expo
+    {
+        
+    }
+.nav
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: grey;
+    }
+.nav a /* balise type inline de base */
+    {
+        display: block;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 14px 16px;
+        width: 33%;
+        text-decoration: none;
+    }
+.nav a:hover
+    {
+        background-color: aqua;
+    }
+.active
+    {
+        background-color: bisque;
+    }
+.expo 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+        margin: 0 auto;
+        text-align: justify;
+        font-size: 22px;
+    }
+.expo h1
+    {
+        text-align: center;
+        margin: 40px 0;
+        padding: 20px 0;
+        border: 5px solid black;
+    }
+.eb_logo
+    {
+        align-self: flex-start;
+        float: left;
+        margin-right: 15px;
+    }
+.introduction
+    {
+        margin: 10px 0;
+        vertical-align: top;
+    }
+    
