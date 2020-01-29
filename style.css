@@ -147,16 +147,16 @@
 /*page_exposition*/
 .page_expo
     {
-        
+        background-color: rgb(34, 110, 180);
     }
 .nav
     {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        background-color: grey;
+        background-color: blueviolet;
     }
-.nav a /* balise type inline de base */
+.nav a
     {
         display: block;
         color: rgb(0, 0, 0);
@@ -171,7 +171,7 @@
     }
 .active
     {
-        background-color: bisque;
+        background-color: rgb(34, 110, 180);
     }
 .expo 
     {
@@ -192,9 +192,8 @@
     }
 .eb_logo
     {
-        align-self: flex-start;
         float: left;
-        margin-right: 15px;
+        margin-right: 20px;
     }
 .introduction
     {
