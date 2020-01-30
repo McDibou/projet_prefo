@@ -136,14 +136,14 @@
     {
         position: absolute;
         font-size: 60px;
-        padding: 15px 30px;
+        padding: 10px 20px;
         background-color: white;
         border: 5px solid black;
         text-decoration: none;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         color: black;
         margin-left: 50px;
-        margin-top : -150px;
+        margin-top : -180px;
     }
 
 /*barre de navigation*/
@@ -176,7 +176,30 @@
 .page_expo
     {
         background-color: rgb(34, 110, 180);
-        /*background: url(img/Fond_1.jpg width="300px" height="auto"), url(img/Fond_2.jpg), url(img/Fond_3.jpg), url(img/Fond_4.jpg), url(img/Fond_5.jpg), url(img/Fond_6.jpg);*/
+    }
+.background_slider
+    {
+        display: flex;
+        margin: 150px 0;
+        position: fixed;
+        z-index: -1;
+        animation: 10s linear 2s infinite alternate fond_img;
+    }
+.back_img
+    {
+        margin: 10px;
+    }
+@keyframes fond_img
+    {
+        0%{
+            transform: translateX(0);
+        }
+        50%{
+            transform: translateX(-2040px);
+        }
+        100%{
+            transform: translateX(0);
+        }
     }
 .expo 
     {
@@ -184,11 +207,11 @@
         flex-direction: column;
         justify-content: center;
         width: 45%;
-        margin: 4% auto;
+        margin: 4% auto 0;
         padding: 2%;
         text-align: justify;
         font-size: 24px;
-        background-color: rgb(37, 78, 153, 0.5);
+        background-color: rgba(255, 255, 255, 0.6);
     }
 .expo h1
     {
@@ -271,4 +294,15 @@ p
 .video
     {
         margin: 30px auto 10px;
+    }
+.nav_bas_expo
+    {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+.nav_bas_expo a
+    {
+        margin: 10px auto;
     }
