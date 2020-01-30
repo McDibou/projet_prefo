@@ -16,7 +16,6 @@
 .presentation 
     {
         position: relative;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 800;
         padding: 30px 0;
         width: 500px;
@@ -29,6 +28,7 @@
 .text 
     {
         position: relative;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: #FFFFFF;
         font-size: 33px;
         text-align: justify;
@@ -52,6 +52,7 @@
     {
         position: absolute;
         content: "”";
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: rgba(255, 255, 255, 1);
         font-size: 200px;
         line-height: 0;
@@ -62,6 +63,7 @@
     {
         position: absolute;
         content: "”";
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: rgba(255, 255, 255, 1);
         font-size: 200px;
         line-height: 0;
@@ -174,6 +176,7 @@
 .page_expo
     {
         background-color: rgb(34, 110, 180);
+        /*background: url(img/Fond_1.jpg width="300px" height="auto"), url(img/Fond_2.jpg), url(img/Fond_3.jpg), url(img/Fond_4.jpg), url(img/Fond_5.jpg), url(img/Fond_6.jpg);*/
     }
 .expo 
     {
