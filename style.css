@@ -180,10 +180,10 @@
 .background_slider
     {
         display: flex;
-        margin: 150px 0;
+        margin: 180px 0;
         position: fixed;
         z-index: -1;
-        animation: 10s linear 2s infinite alternate fond_img;
+        animation: 120s linear 2s infinite alternate fond_img;
     }
 .back_img
     {
@@ -297,7 +297,7 @@ p
     }
 .nav_bas_expo
     {
-        margin: 0 auto;
+        margin: 25px auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -305,4 +305,9 @@ p
 .nav_bas_expo a
     {
         margin: 10px auto;
+    }
+.nav_bas_expo a:hover
+    {
+        transform: scale(1.2);
+        transition-duration: 1s;
     }
