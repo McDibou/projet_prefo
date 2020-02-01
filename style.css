@@ -2,10 +2,35 @@
     {
         margin: 0;
     }
+@font-face
+    {
+        font-family: springfield;
+        src: url(font/Springfield\ demo.ttf);
+    }
+@font-face
+    {
+        font-family: vague;
+        src: url(font/nouvelle_vague_final.ttf)
+    }
+@font-face
+    {
+        font-family: dk;
+        src: url(font/DK\ Longreach.otf)
+    }
+@font-face
+    {
+        font-family: libel;
+        src: url(font/libel-suit-rg.ttf)
+    }
+@font-face
+    {
+        font-family: dayrom;
+        src: url(font/DAYROM__.ttf), url(font/DAYROM_X.ttf)
+    }
 /*page_index*/
 .page_index
     {
-        background: linear-gradient(90deg, rgb(34, 110, 180) 50%, rgb(113, 31, 247) 0%);
+        background: linear-gradient(90deg,#00dfc0 50%, #01b399 0%);
         overflow: hidden;
     }
 .index
@@ -16,8 +41,8 @@
 .presentation 
     {
         position: relative;
-        font-weight: 800;
-        padding: 30px 0;
+        font-weight: 900;
+        padding: 40px 0 20px 0;
         width: 500px;
         margin: auto;
         align-self: center;
@@ -28,9 +53,9 @@
 .text 
     {
         position: relative;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: vague, sans-serif;
         color: #FFFFFF;
-        font-size: 33px;
+        font-size: 32px;
         text-align: justify;
         line-height: 1;
         margin: 0;
@@ -38,21 +63,19 @@
 .by 
     {
         position: relative;
-        color: #292a2b;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 20px;
-        font-weight: initial;
-        font-style: italic;
+        color: #2a2e33;
+        font-family: springfield, sans-serif;
+        font-size: 35px;
+        font-weight: normal;
         text-align: right;
         margin: 0;
-        padding-top: 20px;
         padding-right: 15px;
     }
 .presentation::before
     {
         position: absolute;
         content: "”";
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Segoe UI', sans-serif;
         color: rgba(255, 255, 255, 1);
         font-size: 200px;
         line-height: 0;
@@ -63,7 +86,7 @@
     {
         position: absolute;
         content: "”";
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Segoe UI', sans-serif;
         color: rgba(255, 255, 255, 1);
         font-size: 200px;
         line-height: 0;
@@ -88,71 +111,37 @@
 .page_menu
     {
         height: 100vh;
-        background: linear-gradient(90deg, rgb(34, 110, 180) 50%, rgb(113, 31, 247) 0%);
         overflow: hidden;
     }
-.arrow_menu
+.barre_horizontal
     {
-        position: absolute;
-        left: 50%;
-        margin-left: -25px;
-        margin-top: 50px;
-        width: 50px;
-        height: auto;
-    }
-.arrow_menu:hover
-    {
-       transform: scale(1.4);
-       transition-duration: 1s;
+        height: 95%;
+        width: 5px;
+        background-color: #E9E9E9;
+        border-radius: 100%;
     }
 .menu
     {
         display: flex;
         height: 100vh;
+        margin: 0 3%;
         justify-content: space-around;
         align-items: center;
     }
-.img_one
+.img:hover
     {
-        background-image: url(img/img_one.jpg);
-        box-shadow: 20px 20px 0px black;  
-    }
-.img_one:hover
-    {
-        transform: scale(1.05);
+        transform: scale(1.2);
         transition-duration: 1s;
     }
-.img_two
-    {
-        background-image: url(img/img_one.jpg);
-        box-shadow: 20px 20px 0px black;
-    }
-.img_two:hover
-    {
-        transform: scale(1.05);
-        transition-duration: 1s;
-    }
-.bottom
-    {
-        position: absolute;
-        font-size: 60px;
-        padding: 10px 20px;
-        background-color: white;
-        border: 5px solid black;
-        text-decoration: none;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color: black;
-        margin-left: 50px;
-        margin-top : -180px;
-    }
-
 /*barre de navigation*/
 .nav
     {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        background-color: blueviolet;
+        background-color: #01b399;
+        font-family: dk, sans-serif;
+        font-size: 40px;
     }
 .nav a
     {
@@ -165,29 +154,30 @@
     }
 .nav a:hover
     {
-        background-color: aqua;
+        background-color: #00dfc0;
     }
 .active
     {
-        background-color: rgb(34, 110, 180);
+        background-color: #EDEDED;
     }
 
 /*page_exposition*/
 .page_expo
     {
-        background-color: rgb(34, 110, 180);
+        background-color: #EDEDED;
     }
 .background_slider
     {
         display: flex;
         margin: 180px 0;
+        margin-left: -250px;
         position: fixed;
         z-index: -1;
-        animation: 120s linear 2s infinite alternate fond_img;
+        animation: 0s linear 2s infinite alternate fond_img;
     }
 .back_img
     {
-        margin: 10px;
+        margin: 15px;
     }
 @keyframes fond_img
     {
@@ -211,7 +201,7 @@
         padding: 2%;
         text-align: justify;
         font-size: 24px;
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.8);
     }
 .expo h1
     {
@@ -219,19 +209,20 @@
         margin: 25px 0;
         padding: 20px 0;
         border: 5px solid black;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: libel, sans-serif;
     }
 p
     {
         margin: 20px 0;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: dayrom, sans-serif;
+        font-size: 30px;
     }
 
 /*image page expo*/
 .eb_logo
     {
         float: left;
-        margin: 40px 20px 100px 0;
+        margin: 0 50px;
         border-radius: 10px;
     }
 .slider
@@ -239,7 +230,7 @@ p
         margin: 20px 0;
         overflow: hidden;
         border: 4px solid white;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     }
 .banniere
     {
@@ -293,7 +284,7 @@ p
     }
 .video
     {
-        margin: 30px auto 10px;
+        margin: 10px auto;
     }
 .nav_bas_expo
     {
