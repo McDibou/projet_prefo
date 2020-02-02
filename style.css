@@ -1,5 +1,4 @@
-*
-    {
+*{
         margin: 0;
     }
 @font-face
@@ -9,8 +8,8 @@
     }
 @font-face
     {
-        font-family: vague;
-        src: url(font/nouvelle_vague_final.ttf)
+        font-family: yeseva;
+        src: url(font/YesevaOne-Regular.ttf)
     }
 @font-face
     {
@@ -27,11 +26,16 @@
         font-family: dayrom;
         src: url(font/DAYROM__.ttf), url(font/DAYROM_X.ttf)
     }
+@font-face
+    {
+        font-family: bubble;
+        src: url(font/Bubblegum.ttf)
+    }
+
 /*page_index*/
 .page_index
     {
         background: linear-gradient(90deg,#00dfc0 50%, #01b399 0%);
-        overflow: hidden;
     }
 .index
     {
@@ -45,16 +49,13 @@
         padding: 40px 0 20px 0;
         width: 500px;
         margin: auto;
-        align-self: center;
         border-top: solid 3px;
         border-bottom: solid 3px;
         color: #ffffff;
     }
 .text 
     {
-        position: relative;
-        font-family: vague, sans-serif;
-        color: #FFFFFF;
+        font-family: yeseva, sans-serif;
         font-size: 32px;
         text-align: justify;
         line-height: 1;
@@ -62,21 +63,19 @@
     }
 .by 
     {
-        position: relative;
         color: #2a2e33;
         font-family: springfield, sans-serif;
         font-size: 35px;
         font-weight: normal;
         text-align: right;
         margin: 0;
-        padding-right: 15px;
+        padding-right: 35px;
     }
 .presentation::before
     {
         position: absolute;
         content: "”";
         font-family: 'Segoe UI', sans-serif;
-        color: rgba(255, 255, 255, 1);
         font-size: 200px;
         line-height: 0;
         bottom: -43px;
@@ -87,10 +86,9 @@
         position: absolute;
         content: "”";
         font-family: 'Segoe UI', sans-serif;
-        color: rgba(255, 255, 255, 1);
         font-size: 200px;
         line-height: 0;
-        bottom: 340px;
+        bottom: 335px;
         left: 30px;
         transform: rotate(180deg);
     }
@@ -98,7 +96,6 @@
     {
         position: absolute;
         width: 50px;
-        height: auto;
         margin: 50px 225px 0;
     }
 .arrow:hover
@@ -108,10 +105,25 @@
     }
 
 /*page_menu*/
+.retour
+    {
+        position: absolute;
+        margin: 80px
+    }
+.retour:hover
+    {
+        transform: rotate(-15deg);
+        transition-duration: 1s;
+    }
 .page_menu
     {
+        display: flex;
         height: 100vh;
-        overflow: hidden;
+        align-items: center;
+    }
+.img_menu
+    {
+        margin: 100px
     }
 .barre_horizontal
     {
@@ -120,35 +132,36 @@
         background-color: #E9E9E9;
         border-radius: 100%;
     }
-.menu
+.bottom
     {
-        display: flex;
-        height: 100vh;
-        margin: 0 3%;
-        justify-content: space-around;
-        align-items: center;
+        position: absolute;
+        font-size: 60px;
+        text-decoration: none;
+        font-family: bubble, sans-serif;
+        color: #00dfc0;
+        text-shadow: 8px 8px 0 #01b399;
+        margin-left: -600px;
+        margin-top: 720px;
     }
-.img:hover
+.bottom:hover
     {
-        transform: scale(1.2);
+        transform: scale(1.6);
         transition-duration: 1s;
     }
+
 /*barre de navigation*/
 .nav
     {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
         background-color: #01b399;
         font-family: dk, sans-serif;
         font-size: 40px;
     }
 .nav a
     {
-        display: block;
-        color: rgb(0, 0, 0);
+        color: #000000;
         text-align: center;
-        padding: 14px 16px;
+        padding: 14px 0;
         width: 33%;
         text-decoration: none;
     }
@@ -169,11 +182,11 @@
 .background_slider
     {
         display: flex;
-        margin: 180px 0;
+        margin: 9% 0;
         margin-left: -250px;
         position: fixed;
         z-index: -1;
-        animation: 0s linear 2s infinite alternate fond_img;
+        animation: 0s linear 2s infinite alternate fond_img; /* désactiver pour cause de ralentissement. modif: 0s-180s */
     }
 .back_img
     {
@@ -195,23 +208,22 @@
     {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         width: 45%;
         margin: 4% auto 0;
-        padding: 2%;
+        padding: 50px;
         text-align: justify;
-        font-size: 24px;
         background-color: rgba(255, 255, 255, 0.8);
     }
 .expo h1
     {
         text-align: center;
+        font-size: 45px;
         margin: 25px 0;
         padding: 20px 0;
         border: 5px solid black;
         font-family: libel, sans-serif;
     }
-p
+.expo p
     {
         margin: 20px 0;
         font-family: dayrom, sans-serif;
@@ -276,11 +288,11 @@ p
     }
 .img_projection
     {
-        margin: 20px 0 20px 20px;
+        margin: 20px 10px 20px 40px;
         float: right;
-        border: 2px solid black;
+        border: 2px solid #000000;
         border-radius: 10px 0;
-        box-shadow: 5px 5px 0px rgb(0, 0, 0);
+        box-shadow: 5px 5px 0px #000000;
     }
 .video
     {
@@ -288,10 +300,9 @@ p
     }
 .nav_bas_expo
     {
-        margin: 25px auto;
+        margin: 25px 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
     }
 .nav_bas_expo a
     {
@@ -301,4 +312,46 @@ p
     {
         transform: scale(1.2);
         transition-duration: 1s;
+    }
+
+/* page intervieuw */
+.page_interview
+    {
+        width: 50%;
+        padding: 20px;
+        margin: 50px auto;
+        text-align: justify;
+        font-size: 30px;
+        background-color: #EDEDED;
+    }
+.introduction
+    {
+        margin: 50px 0;
+        padding: 0 20px;
+    }
+.personne
+    {
+        display: flex;
+    }
+.contenu h1
+    {
+        text-align: center;
+    }
+.question
+    {
+        text-align: center;
+        margin: 10px 0;
+        padding: 10px 0;
+        border: 4px solid black;
+    }
+.reponse
+    {
+        display: flex;
+    }
+.contenu
+    {
+        width: 33%;
+        margin: 15px;
+        padding: 30px 10px;
+        background-color: #00dfc0;
     }
