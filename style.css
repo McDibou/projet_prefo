@@ -120,10 +120,8 @@
         display: flex;
         height: 100vh;
         align-items: center;
-    }
-.img_menu
-    {
-        margin: 100px
+        justify-content: space-around;
+        margin: 0 5%;
     }
 .barre_horizontal
     {
@@ -140,15 +138,15 @@
         font-family: bubble, sans-serif;
         color: #00dfc0;
         text-shadow: 8px 8px 0 #01b399;
-        margin-left: -600px;
-        margin-top: 720px;
+        margin-left: 180px;
+        margin-top: -160px;
+        transition: transform 0.5s ease-in;
     }
-.bottom:hover
+.lien_menu:hover .bottom
     {
-        transform: scale(1.6);
-        transition-duration: 1s;
+        transform: scale(1.2);
+        transition-duration: 0.5s;
     }
-
 /*barre de navigation*/
 .nav
     {
@@ -156,6 +154,8 @@
         background-color: #01b399;
         font-family: dk, sans-serif;
         font-size: 40px;
+        text-align: center;
+
     }
 .nav a
     {
@@ -173,7 +173,20 @@
     {
         background-color: #EDEDED;
     }
-
+.deroulant, .sous a
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+.sous
+    {
+        display: none;
+    }
+.deroulant:hover .sous
+    {
+        display: block;
+    }
 /*page_exposition*/
 .page_expo
     {
@@ -191,6 +204,8 @@
 .back_img
     {
         margin: 15px;
+        width: 500px;
+        height: auto;
     }
 @keyframes fond_img
     {
@@ -317,12 +332,17 @@
 /* page intervieuw */
 .page_interview
     {
-        width: 50%;
+        background-color: #EDEDED;
+    }
+.interview
+    {
+        width: 60%;
         padding: 20px;
         margin: 50px auto;
         text-align: justify;
         font-size: 30px;
-        background-color: #EDEDED;
+        background-color: #ffffff;
+        font-family: dayrom, sans-serif;
     }
 .introduction
     {
@@ -333,25 +353,51 @@
     {
         display: flex;
     }
-.contenu h1
+.personne h1
     {
         text-align: center;
+        
     }
 .question
     {
         text-align: center;
-        margin: 10px 0;
         padding: 10px 0;
         border: 4px solid black;
+        border-radius: 10px;
+        font-family: dk, sans-serif;
     }
 .reponse
     {
         display: flex;
     }
-.contenu
+.contenu_1, .contenu_2, .contenu_3
     {
         width: 33%;
-        margin: 15px;
-        padding: 30px 10px;
+        margin: 0 15px;
+        padding: 40px 15px;
+    }
+.typo_person
+    {
+        width: 250px;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+.contenu_1
+    {
+        background-color: #01b399;
+    }
+.contenu_2
+    {
+        background-color: #7ff2e5;
+    }
+.contenu_3
+    {
         background-color: #00dfc0;
+    }
+.page_interview h1
+    {
+        text-align: center;
+        margin: 10px;
+        font-family: yeseva, sans-serif;
     }
