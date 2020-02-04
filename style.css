@@ -1,5 +1,7 @@
-*{
+*
+    {
         margin: 0;
+        padding: 0;
     }
 @font-face
     {
@@ -56,7 +58,7 @@
 .text 
     {
         font-family: yeseva, sans-serif;
-        font-size: 32px;
+        font-size: 2em;
         text-align: justify;
         line-height: 1;
         margin: 0;
@@ -65,7 +67,7 @@
     {
         color: #2a2e33;
         font-family: springfield, sans-serif;
-        font-size: 35px;
+        font-size: 2.5em;
         font-weight: normal;
         text-align: right;
         margin: 0;
@@ -88,7 +90,7 @@
         font-family: 'Segoe UI', sans-serif;
         font-size: 200px;
         line-height: 0;
-        bottom: 335px;
+        bottom: 340px;
         left: 30px;
         transform: rotate(180deg);
     }
@@ -97,10 +99,11 @@
         position: absolute;
         width: 50px;
         margin: 50px 225px 0;
+        transition: transform 0.5s ease;
     }
 .arrow:hover
     {
-       transform: scale(1.4) translateY(10px);
+       transform: scale(1.4) translateY(14px);
        transition-duration: 1s;
     }
 
@@ -108,12 +111,13 @@
 .retour
     {
         position: absolute;
-        margin: 80px
+        margin: 80px;
+        transition: transform 0.5s ease-in;
     }
 .retour:hover
     {
         transform: rotate(-15deg);
-        transition-duration: 1s;
+        transition-duration: 0.5s;
     }
 .page_menu
     {
@@ -126,20 +130,26 @@
 .barre_horizontal
     {
         height: 95%;
-        width: 5px;
+        width: 0.5%;
         background-color: #E9E9E9;
         border-radius: 100%;
+    }
+.img_menu
+    {
+        width: 100%;
+        max-width: 750px;
+        height: auto;
     }
 .bottom
     {
         position: absolute;
-        font-size: 60px;
+        font-size: 4em;
         text-decoration: none;
         font-family: bubble, sans-serif;
         color: #00dfc0;
         text-shadow: 8px 8px 0 #01b399;
         margin-left: 180px;
-        margin-top: -160px;
+        margin-top: -150px;
         transition: transform 0.5s ease-in;
     }
 .lien_menu:hover .bottom
@@ -147,25 +157,61 @@
         transform: scale(1.2);
         transition-duration: 0.5s;
     }
+
 /*barre de navigation*/
-.nav
+.barre_menu
     {
-        display: flex;
-        background-color: #01b399;
+        width: 100%;
+        margin: 0 auto;
+        position: sticky;
         font-family: dk, sans-serif;
         font-size: 40px;
-        text-align: center;
-
     }
-.nav a
+.menu
     {
-        color: #000000;
-        text-align: center;
-        padding: 14px 0;
-        width: 33%;
-        text-decoration: none;
+        list-style-type: none;
+        display: flex;
     }
-.nav a:hover
+.menu li
+    {
+        flex: 1 1 33%;
+        text-align: center;
+        position: relative;
+    }
+nav a
+    {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 14px 0px;
+        background-color: #01b399;
+    }
+nav a:hover
+    {
+        background-color: #00dfc0;
+    }
+.sous
+    {
+        display: none;
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+    }
+.menu li:hover .sous
+    {
+        display: flex;
+        flex-flow: column wrap;
+    }
+.sous li
+    {
+        flex: 1 1 33%;
+        text-align: center;
+    }
+.sous a
+    {
+        padding: 14px 0;
+    }
+.sous a:hover
     {
         background-color: #00dfc0;
     }
@@ -173,20 +219,7 @@
     {
         background-color: #EDEDED;
     }
-.deroulant, .sous a
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-.sous
-    {
-        display: none;
-    }
-.deroulant:hover .sous
-    {
-        display: block;
-    }
+
 /*page_exposition*/
 .page_expo
     {
@@ -203,8 +236,8 @@
     }
 .back_img
     {
-        margin: 15px;
-        width: 500px;
+        margin: 0.5%;
+        width: 25%;
         height: auto;
     }
 @keyframes fond_img
@@ -213,7 +246,7 @@
             transform: translateX(0);
         }
         50%{
-            transform: translateX(-2040px);
+            transform: translateX(-150%);
         }
         100%{
             transform: translateX(0);
@@ -223,45 +256,48 @@
     {
         display: flex;
         flex-direction: column;
-        width: 45%;
+        width: 50%;
         margin: 4% auto 0;
-        padding: 50px;
+        padding: 2%;
         text-align: justify;
         background-color: rgba(255, 255, 255, 0.8);
     }
 .expo h1
     {
         text-align: center;
-        font-size: 45px;
-        margin: 25px 0;
-        padding: 20px 0;
+        font-size: 3em;
+        margin: 2% 0;
+        padding: 2% 0;
         border: 5px solid black;
         font-family: libel, sans-serif;
     }
 .expo p
     {
-        margin: 20px 0;
+        margin: 2% 0;
         font-family: dayrom, sans-serif;
-        font-size: 30px;
+        font-size: 1.8em;
     }
 
 /*image page expo*/
 .eb_logo
     {
         float: left;
-        margin: 0 50px;
+        margin: 0 4%;
         border-radius: 10px;
     }
 .slider
     {
-        margin: 20px 0;
+        margin: 2% auto;
         overflow: hidden;
         border: 4px solid white;
+        width: 100%;
+        max-width: 850px;
+        height: auto;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     }
 .banniere
     {
-        width: calc(864px*3);
+        width: calc(300%*3);
         animation: mouve 20s infinite;
     }
 .slide
@@ -280,22 +316,22 @@
             transform: translateX(0);
         }
         33% {
-            transform: translateX(-864px);
+            transform: translateX(-850px);
         }
         44% {
-            transform: translateX(-864px);
+            transform: translateX(-850px);
         }
         55% {
-            transform: translateX(-864px);
+            transform: translateX(-850px);
         }
         66% {
-            transform: translateX(-1728px);
+            transform: translateX(-1700px);
         }
         77% {
-            transform: translateX(-1728px);
+            transform: translateX(-1700px);
         }
         88% {
-            transform: translateX(-1728px);
+            transform: translateX(-1700px);
         }
         100% {
             transform: translateX(0);
@@ -303,7 +339,7 @@
     }
 .img_projection
     {
-        margin: 20px 10px 20px 40px;
+        margin: 2% 1% 2% 4%;
         float: right;
         border: 2px solid #000000;
         border-radius: 10px 0;
@@ -311,19 +347,19 @@
     }
 .video
     {
-        margin: 10px auto;
+        margin: 0 auto;
     }
-.nav_bas_expo
+.nav_bas
     {
-        margin: 25px 0;
+        margin: 2% 0;
         display: flex;
         flex-direction: column;
     }
-.nav_bas_expo a
+.nav_bas a
     {
-        margin: 10px auto;
+        margin: 0.5% auto;
     }
-.nav_bas_expo a:hover
+.nav_bas a:hover
     {
         transform: scale(1.2);
         transition-duration: 1s;
@@ -337,17 +373,17 @@
 .interview
     {
         width: 60%;
-        padding: 20px;
-        margin: 50px auto;
+        padding: 1%;
+        margin: 2% auto;
         text-align: justify;
-        font-size: 30px;
+        font-size: 1.8em;
         background-color: #ffffff;
         font-family: dayrom, sans-serif;
     }
 .introduction
     {
-        margin: 50px 0;
-        padding: 0 20px;
+        margin: 4% 0;
+        padding: 0 2%;
     }
 .personne
     {
@@ -356,14 +392,25 @@
 .personne h1
     {
         text-align: center;
-        
+        margin: 2em;
+        font-family: yeseva, sans-serif;
+        margin: 4% auto;
+    }
+.typo_person
+    {
+        width: 80%;
+        height: auto;
+        display: block;
+        margin: 2% auto;
     }
 .question
     {
         text-align: center;
-        padding: 10px 0;
-        border: 4px solid black;
-        border-radius: 10px;
+        padding: 1% 0;
+        font-size: 1.2em;
+        border-bottom: 4px solid black;
+        border-top: 4px solid black;
+        border-radius: 15px;
         font-family: dk, sans-serif;
     }
 .reponse
@@ -372,16 +419,10 @@
     }
 .contenu_1, .contenu_2, .contenu_3
     {
-        width: 33%;
-        margin: 0 15px;
-        padding: 40px 15px;
-    }
-.typo_person
-    {
-        width: 250px;
-        height: auto;
-        display: block;
-        margin: 20px auto;
+        flex: 1 1 33%;
+        margin: 0 1.5%;
+        padding: 3% 2%;
+        font-size: 0.9em;
     }
 .contenu_1
     {
@@ -395,9 +436,11 @@
     {
         background-color: #00dfc0;
     }
-.page_interview h1
+.tourner_page
     {
-        text-align: center;
-        margin: 10px;
-        font-family: yeseva, sans-serif;
+        position: absolute;
+        width: 2%;
+        height: auto;
+        margin-top: -0.1%;
+        margin-left: 15.1%;
     }
