@@ -3,6 +3,10 @@
         margin: 0;
         padding: 0;
     }
+html
+    {
+        scroll-behavior: smooth;
+    }
 @font-face
     {
         font-family: springfield;
@@ -384,6 +388,24 @@ nav a:hover
     {
         margin: 4% 0;
         padding: 0 2%;
+    }
+.button_survole
+    {
+        position: absolute;
+        margin-top: -3%;
+        margin-left: 45%;
+        width: 2%;
+        background-color: teal;
+    }
+.suite_introduction
+    {
+        display: none;
+        margin: 4% 0;
+        padding: 0 2%;
+    }
+.survole:hover .suite_introduction
+    {
+        display: flex;
     }
 .personne
     {
