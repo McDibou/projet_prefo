@@ -42,6 +42,7 @@ html
 .page_index
     {
         background: linear-gradient(90deg,#00dfc0 50%, #01b399 0%);
+        
     }
 .index
     {
@@ -82,7 +83,7 @@ html
         position: absolute;
         content: "”";
         font-family: 'Segoe UI', sans-serif;
-        font-size: 200px;
+        font-size: 13em;
         line-height: 0;
         bottom: -43px;
         right: 30px;
@@ -92,7 +93,7 @@ html
         position: absolute;
         content: "”";
         font-family: 'Segoe UI', sans-serif;
-        font-size: 200px;
+        font-size: 13em;
         line-height: 0;
         bottom: 340px;
         left: 30px;
@@ -102,7 +103,7 @@ html
     {
         position: absolute;
         width: 50px;
-        margin: 50px 225px 0;
+        margin: 10% 45% 0;
         transition: transform 0.5s ease;
     }
 .arrow:hover
@@ -112,17 +113,6 @@ html
     }
 
 /*page_menu*/
-.retour
-    {
-        position: absolute;
-        margin: 80px;
-        transition: transform 0.5s ease-in;
-    }
-.retour:hover
-    {
-        transform: rotate(-15deg);
-        transition-duration: 0.5s;
-    }
 .page_menu
     {
         display: flex;
@@ -131,10 +121,32 @@ html
         justify-content: space-around;
         margin: 0 5%;
     }
+.retour
+    {
+        position: absolute;
+        margin: 5%;
+        transition: transform 0.5s ease-in;
+    }
+.retour:hover
+    {
+        transform: scale(1.1) rotate(-15deg);
+        transition-duration: 0.5s;
+    }
+.email
+    {
+        position: absolute;
+        margin: 5% 0 0 92%;
+        transition: transform 0.5s ease-in;
+    }
+.email:hover
+    {
+        transform: scale(1.1) rotate(15deg);
+    }
+
 .barre_horizontal
     {
         height: 95%;
-        width: 0.5%;
+        width: 5px;
         background-color: #E9E9E9;
         border-radius: 100%;
     }
@@ -166,10 +178,11 @@ html
 .barre_menu
     {
         width: 100%;
-        margin: 0 auto;
         position: sticky;
         font-family: dk, sans-serif;
-        font-size: 40px;
+        font-size: 2.5em;
+        text-align: center;
+        
     }
 .menu
     {
@@ -179,7 +192,6 @@ html
 .menu li
     {
         flex: 1 1 33%;
-        text-align: center;
         position: relative;
     }
 nav a
@@ -211,10 +223,6 @@ nav a:hover
         flex: 1 1 33%;
         text-align: center;
     }
-.sous a
-    {
-        padding: 14px 0;
-    }
 .sous a:hover
     {
         background-color: #00dfc0;
@@ -222,6 +230,22 @@ nav a:hover
 .active
     {
         background-color: #EDEDED;
+    }
+
+/*footer*/
+.nav_bas
+    {
+        margin: 2% 0;
+        display: flex;
+    }
+.nav_bas a
+    {
+        margin: 0.5% auto;
+    }
+.nav_bas a:hover
+    {
+        transform: scale(1.2);
+        transition-duration: 1s;
     }
 
 /*page_exposition*/
@@ -233,10 +257,11 @@ nav a:hover
     {
         display: flex;
         margin: 9% 0;
-        margin-left: -250px;
+        margin-left: -10%;
         position: fixed;
         z-index: -1;
-        animation: 0s linear 2s infinite alternate fond_img; /* désactiver pour cause de ralentissement. modif: 0s-180s */
+        animation: 0s linear 2s infinite alternate fond_img; 
+        /* désactiver pour cause de ralentissement. modif: 0s-180s */
     }
 .back_img
     {
@@ -353,21 +378,6 @@ nav a:hover
     {
         margin: 0 auto;
     }
-.nav_bas
-    {
-        margin: 2% 0;
-        display: flex;
-        flex-direction: column;
-    }
-.nav_bas a
-    {
-        margin: 0.5% auto;
-    }
-.nav_bas a:hover
-    {
-        transform: scale(1.2);
-        transition-duration: 1s;
-    }
 
 /* page intervieuw */
 .page_interview
@@ -462,7 +472,6 @@ nav a:hover
     {
         position: absolute;
         width: 2%;
-        height: auto;
         margin-top: -0.1%;
         margin-left: 15.1%;
     }
@@ -476,4 +485,68 @@ nav a:hover
         text-align: center;
         margin: 5% 0 2%;
         font-family: yeseva, sans-serif;
+    }
+
+/* page_contact */
+.page_contact
+    {
+        background-color: #EDEDED;
+    }
+.contact
+    {
+        display: flex;
+        height: 100vh;
+    }
+.formulaire
+    {
+        width: 400px;
+        margin: auto;
+        background-color: #ffffff;
+        padding: 2%;
+        text-align: center;
+        font-family: libel, sans-serif;
+        font-size: 1.5em;
+    }
+.satisfait
+    {
+        margin: 5%;
+    }
+.rep_satif
+    {
+        margin-top: 3%;
+        font-size: 0.8em;
+    }
+.interessant
+    {
+        margin: 3%;
+    }
+.e_mail 
+    {
+        text-align: right;
+    }
+.form_1
+    {
+        font-family: dayrom,sans-serif;
+    }
+.cadre_avis
+    {
+        padding: 8%;
+    }
+#avis
+    {
+        font-family: dk, sans-serif;
+
+    }
+.comment
+    {
+        text-align: left;
+        margin-top: 4%;
+    }
+#comment
+    {
+        resize : none;
+    }
+.envoyer
+    {
+        margin: 2%;
     }

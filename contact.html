@@ -7,6 +7,58 @@
         <title>Contact</title>
     </head>
     <body class="page_contact">
-
+        <header class="nav">
+            <nav class="barre_menu">
+                <ul class="menu">
+                    <li class="deroulant"><a href="index.html">ACCUEIL</a>
+                        <ul class="sous">
+                            <li><a href="exposition.html">EXPOSITION</a></li>
+                            <li><a href="interview.html">INTERVIEW</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="active" href="contact.html">CONTACT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="contact">
+            <div class=formulaire>
+                <div class="satisfait">
+                    <label class="form_1"> Satisfait :</label>
+                        <div class="rep_satif">
+                            <label class="inline" for="#">OUI</label>
+                            <input type="radio" name="#" value="oui" id="oui" />
+                            <input type="radio" name="#" value="non" id="non" />
+                            <label class="inline" for="#">NON</label>
+                        </div>
+                </div>
+                <div class="interessant">
+                    <label class="form_1">Cela m'a intéressant :</label>
+                        <select name="#" id="utilise">
+                            <option>--</option>
+                            <option>Un peu</option>
+                            <option>Beaucoup</option>
+                            <option>Passionnément</option>
+                            <option>Pas du tout</option>
+                        </select>
+                </div>
+                <div>
+                    <fieldset class="cadre_avis">
+                            <legend id="avis">UN CONSEIL ?</legend>
+                            <div class="comment">
+                                <div><label for="#">Vos commentaires :</label></div>
+                                <textarea id="comment" name="#" cols="30" rows="6"></textarea>
+                            </div>
+                            <div class="e_mail">
+                                <div><label for="#">E-mail</label></div>
+                                <input id="email" type="email" name="#" size="20" maxlength="40" placeholder="optionnel" />
+                            </div>
+                    </fieldset>
+                </div>
+                <div class="envoyer">
+                    <input type="submit" value="Envoyer" />
+                </div>   
+            </div>   
+        </section>
     </body>
 </html>
