@@ -16,49 +16,53 @@
                             <li><a href="interview.html">INTERVIEW</a></li>
                         </ul>
                     </li>
-                    <li><a class="active" href="contact.html">CONTACT</a></li>
+                    <li><a class="menu_active" href="contact.html">CONTACT</a></li>
                     <li><a href="menu.html">MENU</a></li>
                 </ul>
             </nav>
         </header>
         <section class="contact">
-            <div class=formulaire>
-                <div class="satisfait">
-                    <label class="form_1"> Satisfait :</label>
-                        <div class="rep_satif">
-                            <label class="inline" for="#">OUI</label>
-                            <input type="radio" name="#" value="oui" id="oui" />
-                            <input type="radio" name="#" value="non" id="non" />
-                            <label class="inline" for="#">NON</label>
-                        </div>
-                </div>
-                <div class="interessant">
-                    <label class="form_1">Cela m'a intéressant :</label>
-                        <select name="#" id="utilise">
-                            <option>--</option>
-                            <option>Un peu</option>
-                            <option>Beaucoup</option>
-                            <option>Passionnément</option>
-                            <option>Pas du tout</option>
-                        </select>
-                </div>
-                <div>
-                    <fieldset class="cadre_avis">
-                            <legend id="avis">UN CONSEIL ?</legend>
-                            <div class="comment">
-                                <div><label for="#">Vos commentaires :</label></div>
-                                <textarea id="comment" name="#" cols="30" rows="6"></textarea>
+            <div class="cadre">
+                <img class="attention" src="img/attention.png" width="180px">
+                <div class="formulaire">
+                    <div class="satisfait">
+                        <label class="satif"> Satisfait ?</label>
+                            <div class="rep_satif">
+                                <label class="inline" for="#">OUI</label>
+                                <input id="oui" type="radio" name="#" value="#" />
+                                <input id="non" type="radio" name="#" value="#" />
+                                <label class="inline" for="#">NON</label>
                             </div>
-                            <div class="e_mail">
-                                <div><label for="#">E-mail</label></div>
-                                <input id="email" type="email" name="#" size="20" maxlength="40" placeholder="optionnel" />
-                            </div>
-                    </fieldset>
+                    </div>
+                    <div class="interessant">
+                        <label>Cela m'a intéressé :</label>
+                            <select id="liste" name="#" >
+                                <option>--</option>
+                                <option>Un peu</option>
+                                <option>Beaucoup</option>
+                                <option>Passionnément</option>
+                                <option>Pas du tout</option>
+                            </select>
+                    </div>
+                    <div>
+                        <fieldset class="cadre_avis">
+                                <legend id="avis">UN CONSEIL</legend>
+                                <div >
+                                    <label class="comment" for="#">Vos commentaires</label>
+                                    <textarea id="comment" name="#" cols="30" rows="8" placeholder=" ..."></textarea>
+                                </div>
+                                <div >
+                                    <label class="e_mail" for="#">E.mail</label>
+                                    <input id="e_mail" type="email" name="#" size="20" maxlength="40" placeholder=" optionnel" />
+                                </div>
+                        </fieldset>
+                    </div>
+                    <div >
+                        <input class="envoyer" type="submit" value="Envoyer" />
+                    </div>
                 </div>
-                <div class="envoyer">
-                    <input type="submit" value="Envoyer" />
-                </div>   
-            </div>   
+                <p class="source"><em>Documents pour la constuction du site : <a href="https://drive.google.com/drive/folders/1BFAqjf1UkcMFB5n0BZn-tDlUNqYtcZ2a?usp=sharing" target="_blank">ici</a></em></p>
+            </div>
         </section>
     </body>
 </html>

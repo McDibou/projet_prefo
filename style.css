@@ -2,6 +2,7 @@
     {
         margin: 0;
         padding: 0;
+        outline: 0;
     }
 html
     {
@@ -49,158 +50,155 @@ html
         display: flex;
         height: 100vh;
     }
-.presentation 
+.presentation
     {
+        color: #ffffff;
         position: relative;
-        font-weight: 900;
-        padding: 40px 0 20px 0;
         width: 500px;
         margin: auto;
+        padding: 40px 0 20px 0;
         border-top: solid 3px;
         border-bottom: solid 3px;
-        color: #ffffff;
+        font-weight: 900;
     }
-.text 
+.perso
     {
-        font-family: yeseva, sans-serif;
-        font-size: 2em;
         text-align: justify;
+        font-family: yeseva, sans-serif;
+        font-size: 2rem;
         line-height: 1;
-        margin: 0;
     }
 .by 
     {
         color: #2a2e33;
-        font-family: springfield, sans-serif;
-        font-size: 2.5em;
-        font-weight: normal;
-        text-align: right;
-        margin: 0;
         padding-right: 35px;
+        text-align: right;
+        font-family: springfield, sans-serif;
+        font-size: 2.5rem;
+        font-weight: normal;
     }
 .presentation::before
     {
-        position: absolute;
         content: "”";
-        font-family: 'Segoe UI', sans-serif;
-        font-size: 13em;
-        line-height: 0;
-        bottom: -43px;
+        position: absolute;
         right: 30px;
+        bottom: -43px;
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 13rem;
+        line-height: 0;
+        
     }
 .presentation::after
     {
-        position: absolute;
         content: "”";
+        position: absolute;
+        bottom: 340px;
+        left: 30px;
         font-family: 'Segoe UI', sans-serif;
         font-size: 13em;
         line-height: 0;
-        bottom: 340px;
-        left: 30px;
         transform: rotate(180deg);
     }
-.arrow
+.page_next
     {
         position: absolute;
         width: 50px;
         margin: 10% 45% 0;
         transition: transform 0.5s ease;
     }
-.arrow:hover
+.page_next:hover
     {
        transform: scale(1.4) translateY(14px);
        transition-duration: 1s;
     }
 
-/*page_menu*/
-.page_menu
-    {
-        display: flex;
-        height: 100vh;
-        align-items: center;
-        justify-content: space-around;
-        margin: 0 5%;
-    }
-.retour
+/* PAGE_MENU */
+.page_back
     {
         position: absolute;
         margin: 5%;
         transition: transform 0.5s ease-in;
     }
-.retour:hover
+.page_back:hover
     {
         transform: scale(1.1) rotate(-15deg);
         transition-duration: 0.5s;
     }
-.email
+.next_page_contact
     {
         position: absolute;
         margin: 5% 0 0 92%;
         transition: transform 0.5s ease-in;
     }
-.email:hover
+.next_page_contact:hover
     {
         transform: scale(1.1) rotate(15deg);
     }
-
+.page_menu
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100vh;
+        margin: 0 5%;
+    }
 .barre_horizontal
     {
+        background-color: #E9E9E9;
         height: 95%;
         width: 5px;
-        background-color: #E9E9E9;
         border-radius: 100%;
     }
 .img_menu
     {
+        height: auto;
         width: 100%;
         max-width: 750px;
-        height: auto;
     }
-.bottom
+.lien_text
     {
-        position: absolute;
-        font-size: 4em;
-        text-decoration: none;
-        font-family: bubble, sans-serif;
         color: #00dfc0;
-        text-shadow: 8px 8px 0 #01b399;
-        margin-left: 180px;
+        position: absolute;
         margin-top: -150px;
+        margin-left: 180px;
+        text-decoration: none;
+        text-shadow: 8px 8px 0 #01b399;
+        font-family: bubble, sans-serif;
+        font-size: 4rem;
         transition: transform 0.5s ease-in;
     }
-.lien_menu:hover .bottom
+.lien_menu:hover .lien_text
     {
         transform: scale(1.2);
         transition-duration: 0.5s;
     }
 
-/*barre de navigation*/
+/* BARRE_DE_NAVIGATION */
 .barre_menu
     {
-        width: 100%;
         position: sticky;
-        font-family: dk, sans-serif;
-        font-size: 2.5em;
+        width: 100%;
         text-align: center;
-        
+        font-family: dk, sans-serif;
+        font-size: 2.5rem;
     }
 .menu
     {
-        list-style-type: none;
         display: flex;
+        list-style-type: none;
     }
 .menu li
     {
-        flex: 1 1 33%;
         position: relative;
+        flex: 1 1 33%;
     }
 nav a
     {
-        display: block;
-        text-decoration: none;
         color: black;
-        padding: 14px 0px;
         background-color: #01b399;
+        display: block;
+        padding: 14px 0px;
+        text-decoration: none;
     }
 nav a:hover
     {
@@ -210,8 +208,8 @@ nav a:hover
     {
         display: none;
         position: absolute;
-        width: 100%;
         z-index: 2;
+        width: 100%;
     }
 .menu li:hover .sous
     {
@@ -227,28 +225,28 @@ nav a:hover
     {
         background-color: #00dfc0;
     }
-.active
+.menu_active
     {
         background-color: #EDEDED;
     }
 
-/*footer*/
-.nav_bas
+/* FOOTER */
+.page_top
     {
-        margin: 2% 0;
         display: flex;
+        margin: 2% 0;
     }
-.nav_bas a
+.page_top a
     {
         margin: 0.5% auto;
     }
-.nav_bas a:hover
+.page_top a:hover
     {
         transform: scale(1.2);
         transition-duration: 1s;
     }
 
-/*page_exposition*/
+/* PAGE_EXPOSITION */
 .page_expo
     {
         background-color: #EDEDED;
@@ -256,18 +254,18 @@ nav a:hover
 .background_slider
     {
         display: flex;
-        margin: 9% 0;
-        margin-left: -10%;
         position: fixed;
         z-index: -1;
+        margin: 9% 0;
+        margin-left: -10%;
         animation: 0s linear 2s infinite alternate fond_img; 
         /* désactiver pour cause de ralentissement. modif: 0s-180s */
     }
 .back_img
     {
-        margin: 0.5%;
         width: 25%;
         height: auto;
+        margin: 0.5%;
     }
 @keyframes fond_img
     {
@@ -283,53 +281,69 @@ nav a:hover
     }
 .expo 
     {
+        background-color: rgba(255, 255, 255, 0.8);
         display: flex;
         flex-direction: column;
         width: 50%;
         margin: 4% auto 0;
         padding: 2%;
         text-align: justify;
-        background-color: rgba(255, 255, 255, 0.8);
     }
 .expo h1
     {
-        text-align: center;
-        font-size: 3em;
         margin: 2% 0;
         padding: 2% 0;
         border: 5px solid black;
+        text-align: center;
         font-family: libel, sans-serif;
+        font-size: 3rem;
     }
-.expo p
-    {
-        margin: 2% 0;
-        font-family: dayrom, sans-serif;
-        font-size: 1.8em;
-    }
-
-/*image page expo*/
 .eb_logo
     {
         float: left;
         margin: 0 4%;
         border-radius: 10px;
     }
-.slider
+.lien_expo
     {
-        margin: 2% auto;
-        overflow: hidden;
-        border: 4px solid white;
+        text-decoration: none;
+    }
+.expo p
+    {
+        margin: 2% 0;
+        font-family: dayrom, sans-serif;
+        font-size: 1.8rem;
+    }
+.img_projection
+    {
+        float: right;
+        margin: 2% 1% 2% 4%;
+        border: 2px solid #000000;
+        border-radius: 10px 0;
+        box-shadow: 5px 5px 0px #000000;
+    }
+.video
+    {
+        margin: 0 auto;
+    }
+
+/* CARROUSEL_PAGE_EXPO */
+.carrousel
+    {
         width: 100%;
         max-width: 850px;
         height: auto;
+        margin: 2% auto;
+        border: 4px solid white;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
     }
 .banniere
     {
         width: calc(300%*3);
         animation: mouve 20s infinite;
     }
-.slide
+.slide_img
     {
         float: left;
     }
@@ -366,52 +380,45 @@ nav a:hover
             transform: translateX(0);
         }
     }
-.img_projection
-    {
-        margin: 2% 1% 2% 4%;
-        float: right;
-        border: 2px solid #000000;
-        border-radius: 10px 0;
-        box-shadow: 5px 5px 0px #000000;
-    }
-.video
-    {
-        margin: 0 auto;
-    }
 
-/* page intervieuw */
+/* PAGE_INTERVIEW */
 .page_interview
     {
         background-color: #EDEDED;
     }
 .interview
     {
-        width: 60%;
-        padding: 1%;
-        margin: 2% auto;
-        text-align: justify;
-        font-size: 1.8em;
         background-color: #ffffff;
+        width: 60%;
+        margin: 2% auto;
+        padding: 1%;
+        text-align: justify;
         font-family: dayrom, sans-serif;
+        font-size: 1.8rem;
     }
 .introduction
     {
         margin: 4% 0 2%;
         padding: 0 2%;
+        font-size: 1.5rem;
     }
 .button_survol
     {
         position: absolute;
-        margin-top: -1.8%;
+        width: 0.8%;
+        margin-top: -1.4%;
         margin-left: 2%;
         padding: 0.5% 0.5% 10% 0.5%;
-        width: 1.6%;
     }
 .suite_introduction
     {
         display: none;
-        padding: 0 2%;
         margin: 0 0 3% 0;
+        padding: 0 2%;
+    }
+.survol
+    {
+        margin: 2%;
     }
 .survol:hover .suite_introduction
     {
@@ -423,27 +430,26 @@ nav a:hover
     }
 .personne h1
     {
-        text-align: center;
-        margin: 2em;
-        font-family: yeseva, sans-serif;
         margin: 4% auto;
+        text-align: center;
+        font-family: yeseva, sans-serif;
     }
 .typo_person
     {
-        width: 80%;
-        height: auto;
         display: block;
+        height: auto;
+        width: 80%;
         margin: 2% auto;
     }
 .question
     {
-        text-align: center;
         padding: 1% 0;
-        font-size: 1.2em;
         border-bottom: 4px solid black;
         border-top: 4px solid black;
         border-radius: 15px;
+        text-align: center;
         font-family: dk, sans-serif;
+        font-size: 2rem;
     }
 .reponse
     {
@@ -454,7 +460,7 @@ nav a:hover
         flex: 1 1 33%;
         margin: 0 1.5%;
         padding: 3% 2%;
-        font-size: 0.9em;
+        font-size: 1.5rem;
     }
 .contenu_1
     {
@@ -468,7 +474,7 @@ nav a:hover
     {
         background-color: #00dfc0;
     }
-.tourner_page
+.coin_page
     {
         position: absolute;
         width: 2%;
@@ -482,12 +488,12 @@ nav a:hover
     }
 .interview h1
     {
-        text-align: center;
         margin: 5% 0 2%;
+        text-align: center;
         font-family: yeseva, sans-serif;
     }
 
-/* page_contact */
+/* PAGE_CONTACT */
 .page_contact
     {
         background-color: #EDEDED;
@@ -495,58 +501,105 @@ nav a:hover
 .contact
     {
         display: flex;
-        height: 100vh;
+        height: 90vh;
+    }
+.attention
+    {
+        position: absolute;
+        transform: rotate(-35deg);
+    }
+.cadre
+    {
+        width: 500px;
+        margin: auto;
+        padding: 1%;
+        border: 20px solid #00dfc0;
+        box-shadow: 12px -12px 0 #01b399, -12px 12px 0 #01b399;
     }
 .formulaire
     {
-        width: 400px;
-        margin: auto;
         background-color: #ffffff;
-        padding: 2%;
+        padding: 3% 10%;
         text-align: center;
-        font-family: libel, sans-serif;
-        font-size: 1.5em;
+        font-family: yeseva,sans-serif;
+        font-size: 1.6rem;
     }
 .satisfait
     {
-        margin: 5%;
+        margin: 7% auto; 
+    }
+.satif 
+    {
+        font-family: dk, sans-serif;
+        font-size: 2.5rem;
     }
 .rep_satif
     {
-        margin-top: 3%;
-        font-size: 0.8em;
+        font-size: 1.3rem;
     }
 .interessant
     {
-        margin: 3%;
+        margin: 5%;
+        font-size: 1.3rem;
     }
-.e_mail 
+#liste
     {
-        text-align: right;
-    }
-.form_1
-    {
-        font-family: dayrom,sans-serif;
+        background-color: #EDEDED;
+        margin: 5px;
+        padding: 6px;
+        border: none;
     }
 .cadre_avis
     {
-        padding: 8%;
+        padding: 10%;
+        border: 2px solid #01b399;
     }
 #avis
     {
+        padding: 0 10px;
         font-family: dk, sans-serif;
-
+        
     }
-.comment
+.e_mail, .comment
     {
-        text-align: left;
-        margin-top: 4%;
+        font-size: 1.2rem;
     }
-#comment
+#e_mail, #comment
     {
-        resize : none;
+        background-color: #EDEDED;
+        padding: 2%;
+        border: none;
+        resize: none;
+    }
+#e_mail::placeholder, #comment::placeholder
+    {
+        color: #ffffff;
+    }
+#e_mail:hover, #comment:hover
+    {
+        background-color: #c7f8f5;
     }
 .envoyer
     {
-        margin: 2%;
+        background-color: #c7f8f5;
+        margin: 3%;
+        padding: 5px 10px;
+        border: none;
+        box-shadow: 2px 2px 0 #00dfc0;
+        font-family: dk, sans-serif;
+        font-size: 1.4rem;
+    }
+.envoyer:hover
+    {
+        box-shadow: -2px -2px 0 #00dfc0;
+    }
+.envoyer:active
+    {
+        background-color: #7ff2e5;
+        box-shadow: none;
+    }
+.source
+    {
+        margin-top: 3%;
+        text-align: center;
     }
