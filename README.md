@@ -21,7 +21,7 @@ _Avec :_
   - [Google](https://www.google.be/)
   - Ma formation au [cf2m](https://www.cf2m.be/)
   
- Je vous shouhait une bonne lecture
+ Je vous souhait une bonne lecture
  
  Adrien De Laet  
  
