@@ -26,3 +26,5 @@ _Avec :_
  Adrien De Laet  
  
 ![GitHub followers](https://img.shields.io/github/followers/mcdibou?color=4&style=social)
+
+[Apache License](http://www.apache.org/licenses/LICENSE-2.0)
