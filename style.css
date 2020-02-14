@@ -416,34 +416,81 @@ nav a:hover
         font-size: 1.8rem;
         font-weight: bolder;
     }
+
 .introduction
     {
         margin: 4% 2% 2%;
         padding: 0 2%;
         font-size: 1.5rem;
     }
-.button_survol
+
+/* SUITE INTRODUCTION */
+#suite_introduction
+    {
+        visibility: hidden;
+    }
+
+#suite_introduction:checked ~ dialog 
+    {
+        display: block;
+    }
+.suite_boutton
+    {
+        position: relative;
+        width: 0;
+        height: 0;
+        margin: -4% 0 1% 10%;
+        border-width: 12px 0 12px 12px;
+        border-style: solid;
+        border-radius: 5px;
+        border-color: transparent transparent transparent #000000;
+        transition: transform 0.5s ease-in;
+    }
+.close
     {
         position: absolute;
-        width: 0.8%;
-        margin-top: -1.4%;
-        margin-left: 2%;
-        padding: 0.5% 0.5% 10% 0.5%;
+        width: 2%;
+        top: 10%;
+        left: 93%;
+        transition: transform 0.5s ease-in;
     }
-.suite_introduction
+.suite_boutton:hover, .close:hover
     {
-        display: none;
-        margin: 0 0 3% 0;
-        padding: 0 2%;
-        font-size: 1.5rem;
+        transform: scale(1.3) rotate(90deg);
+        transition-duration: 0.5s;
     }
-.survol
+dialog
     {
-        margin: 2%;
+        background-color: #c7f8f5;
+        position: fixed;
+        z-index: 2;
+        padding: 8%;
+        top: 50%;
+        left: 50%;
+        max-width: 50%;
+        max-height: 70%;
+        margin: auto;
+        border: none;
+        overflow: auto;
+        transform: translate(-50%, -50%);
+        animation: apparition 0.5s ease-in;
     }
-.survol:hover .suite_introduction
+@keyframes apparition
     {
-        display: flex;
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+/* FIN SUITE INTRODUCTION */
+.interview h1
+    {
+        margin: 5% 0 2%;
+        text-align: center;
+        font-family: libel, sans-serif;
     }
 .personne
     {
@@ -508,11 +555,11 @@ nav a:hover
         padding: 0 2%;
         font-size: 1.4rem;
     }
-.interview h1
+.img_conclusion
     {
-        margin: 5% 0 2%;
-        text-align: center;
-        font-family: libel, sans-serif;
+        float: right;
+        width: 30%;
+        margin-left: 4%;
     }
 
 /* PAGE_CONTACT */
