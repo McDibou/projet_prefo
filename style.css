@@ -445,6 +445,7 @@ nav a:hover
         border-radius: 5px;
         border-color: transparent transparent transparent #000000;
         transition: transform 0.5s ease-in;
+        cursor: pointer;
     }
 .close
     {
@@ -453,6 +454,7 @@ nav a:hover
         top: 10%;
         left: 93%;
         transition: transform 0.5s ease-in;
+        cursor: pointer;
     }
 .suite_boutton:hover, .close:hover
     {
@@ -484,8 +486,8 @@ dialog
             opacity: 1;
         }
     }
-
 /* FIN SUITE INTRODUCTION */
+
 .interview h1
     {
         margin: 5% 0 2%;
