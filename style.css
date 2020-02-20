@@ -47,7 +47,6 @@ html
 .page_index
     {
         background: linear-gradient(90deg,#00dfc0 50%, #01b399 0%);
-        
     }
 .index
     {
@@ -90,7 +89,6 @@ html
         font-family: 'Segoe UI', sans-serif;
         font-size: 13rem;
         line-height: 0;
-        
     }
 .presentation::after
     {
@@ -106,7 +104,6 @@ html
 .page_next
     {
         position: absolute;
-        width: 50px;
         margin: 10% 45% 0;
         transition: transform 0.5s ease;
     }
@@ -156,7 +153,6 @@ html
 .img_menu
     {
         height: auto;
-        width: 100%;
         max-width: 750px;
     }
 .lien_text
@@ -279,8 +275,6 @@ nav a:hover
     }
 .back_img
     {
-        width: 25%;
-        height: auto;
         margin: 0.5%;
     }
 @keyframes fond_img
@@ -450,7 +444,6 @@ nav a:hover
 .close
     {
         position: absolute;
-        width: 2%;
         top: 10%;
         left: 93%;
         transition: transform 0.5s ease-in;
@@ -507,8 +500,6 @@ dialog
 .typo_person
     {
         display: block;
-        height: auto;
-        width: 80%;
         margin: 2% auto;
     }
 .question
@@ -547,7 +538,6 @@ dialog
 .coin_page
     {
         position: absolute;
-        width: 2%;
         margin-top: -0.1%;
         margin-left: 15.1%;
     }
@@ -560,7 +550,6 @@ dialog
 .img_conclusion
     {
         float: right;
-        width: 30%;
         margin-left: 4%;
     }
 
