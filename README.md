@@ -20,9 +20,7 @@ For the most optimal experience, you will need :
   - Ma formation au [cf2m](https://www.cf2m.be/)
   
  I wish you a good reading
- 
- De  Laet Adrien 
- 
+
 ![GitHub followers](https://img.shields.io/github/followers/mcdibou?color=4&style=social)
 
 [Apache License](http://www.apache.org/licenses/LICENSE-2.0)
