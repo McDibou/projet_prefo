@@ -1,29 +1,27 @@
-# Projet préformation
-Ceci est mon premier site créé dans le cadre de ma préformation au cf2m :
+# Pre-formation project
+This is my first site created as part of my pre-training at cf2m :
 
 http://adrien.webdev-cf2m.be/
 
-Les consignes étaient de faire un site autour d'une exposition sur Bruxelles et d'une interview d'un(e) depelloppeur(se) web.
-Mon challenge était de faire le site uniquement en html et css.
+The instructions were to make a website around an exhibition on Brussels and an interview with a web developer.
+My challenge was to make the site only in html and css.
 
-## Pour commencer
-Installez-vous confortablement.
+## To begin
+Make yourself comfortable.
 
-### Pré-requis
-Pour l'expérience la plus optimale, il vous faudra :
-* Ouvrir le site sur ``Google Chrome``
-* Avec un écran ``1920 x 1080``
+## Prerequisite
+For the most optimal experience, you will need :
+* Open the site on ``Google Chrome``.
+* With a screen ``1920 x 1080``.
 
-## Conçu
-
-_Avec :_
+## Designed
   - [Visual Studio Code](https://code.visualstudio.com/) 
   - [Google](https://www.google.be/)
   - Ma formation au [cf2m](https://www.cf2m.be/)
   
- Je vous souhait une bonne lecture
+ I wish you a good reading
  
- Adrien De Laet  
+ De  Laet Adrien 
  
 ![GitHub followers](https://img.shields.io/github/followers/mcdibou?color=4&style=social)
 
