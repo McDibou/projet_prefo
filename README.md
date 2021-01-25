@@ -1,5 +1,5 @@
-# Pre-formation project
-This is my first site created as part of my pre-training at cf2m :
+# PRE-FORMATION PROJECT
+>This is my first site created as part of my pre-training at cf2m :
 
 http://adrien.webdev-cf2m.be/
 
